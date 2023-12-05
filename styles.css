@@ -35,38 +35,39 @@ a {
 .nav-slogo {
 	max-width: 30px;
 	max-height: 30px;
-	background-color: #1cb04d;
-	border: 10px solid #1cb04d;
-	border-radius: 15px;
+	background-color: #32a95a;
+	border: 13px solid #32a95a;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+#fac {
 	margin-left: 20px;
 }
 #vib {
-	background-color: Violet;
-	border: 10px solid Violet;
+	background-color: #7036d6;
+	border: 13px solid #7036d6;
 }
 #tel {
-	background-color: DodgerBlue;
-	border: 10px solid DodgerBlue;
+	background-color: #33abe0;
+	border: 13px solid #33abe0;
 }
 .ls {
-	background-color: #1cb04d;
+	background-color: #32a95a;
 	color: white;
 	font-size: 16px;
 	font-family: "Gill Sans", sans-serif;
-	border: solid 10px #1cb04d;
+	border: solid 10px #32a95a;
 	border-radius: 15px;
-	margin-left: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
 	cursor: pointer;
 }
 .sec-txt {
 	font-size: 20px;
-	color: #989b81d9;
+	color: #cbcbcb;
 	font-family: "Gill Sans", sans-serif;
-	border: solid 4px #476da987;
-	border-radius: 20px;
-	background: white;
 	margin-right: 9in;
 	margin-left: 2.5in;
 }
@@ -77,6 +78,8 @@ a {
 .sec-img {
 	max-width: 480px;
 	max-height: 480px;
+	border: 0px;
+	border-radius: 30px;
 }
 #img_5 {
 	width: 360px;
