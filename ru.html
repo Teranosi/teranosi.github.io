@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link href="./styles.css" rel="stylesheet">
+	<meta name="language" content="ru">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body style="background-color: #1c1c1c;">
+	<nav class = "nav">
+		<div>
+		<img class = "nav-ologo" src = "./media/logo.png">
+		</div>
+		<div>
+			<a href = "./stub.html" class = "nav-txt nav-dec">Главная</a>
+			<a href = "./stub.html" class = "nav-txt nav-dec">Б/У под заказ</a>
+			<a href = "./stub.html" class = "nav-txt nav-dec">Авто под заказ</a>
+			<a href = "./stub.html" class = "nav-txt nav-dec">Авто в наличии</a>
+			<a href = "./stub.html" class = "nav-txt nav-dec">Коммерческий</a>
+		</div>
+		<div id = "numblock">
+			<a class = "nav-txt num">+38 (093) 391-19-19</a>
+			<a class = "nav-txt num">+38 (097) 680-07-07</a>
+		</div>
+		<div>
+			<a target="_blank" href = "https://www.facebook.com/greenauto.biz"><img class = "nav-slogo" src = "./media/flogo.png"></a>
+			<a target="_blank" href = "https://www.youtube.com/channel/UCaulojQbDjHXWKoVcp-EyHA"><img class = "nav-slogo" src = "./media/ylogo.png"></a>
+			<a target="_blank" href = "https://www.instagram.com/greenauto.biz/"><img class = "nav-slogo" src = "./media/ilogo.png"></a>
+			<a target="_blank" href = ""><img class = "nav-slogo" src = "./media/clogo.png"></a>
+			<a target="_blank" href = "./stub.html"><img class = "nav-slogo" id = "vib" src = "./media/vlogo.png">
+			<a target="_blank" href = "https://t.me/GreenAuto_amo_bot"><img class = "nav-slogo" id = "tel" src = "./media/tlogo.png"></a>
+		</div>
+		<select class = "ls" name = "language" onchange = "location = this.value;">
+			<option value="./ru.html">ru</option>
+			<option value="./index.html">ua</option>
+		</select>
+	</nav>
+	
+		<section style = "background-color: DimGray; padding-top: 20px; padding-bottom: 20px; margin-top: 2in; display: flex; flex-direction: row">
+		<div class = "sec-txt">
+			<h1 style = "padding-left: 15px;">Переходник CHAdeMO</h1>
+			<ul>
+				<li class = "prop-txt">Стоимость: 1200$</li>
+				<li class = "prop-txt">Гарантия: 1 рік.</li>
+				<li class = "prop-txt">Максимальная мощность – до 100 кВт.</li>
+			</ul>
+			<ol>
+				<li>Переходник полностью протестирован: ✔ На всех станциях Украины и Европы.</li>
+				<li>Все силовые контакты не содержат проводов, сплошные и изготовлены из специального электротехнического сплава, что позволяет пропускать через переходник ток до 250А (100 кВт).</li>
+				<li>Корпус изготовлен из специального материала с рабочей температурой от –50 до +140C. Этот материал не занимается.</li>
+				<li>Переходник универсален. Он подходит ко всем авто. Пожалуй, есть вопрос: «где видео тестирование?» Видео есть, есть очень много видео как из Украины, так и из Европы.
+Было принято решение сначала все протестировать, изготовить первую партию переходников, сделать готовый продукт, а уж потом показать все производившиеся в течение долгого периода тестирования на многих авто.</li>
+			</ol>
+		</div>
+		
+		<div id = "img-pos">
+			<img class = "sec-img" src = "./prod/ph1.jpg" id="img_1" style="position: absolute; top: 320px; left: 1300px;">
+			<img class = "sec-img" src = "./prod/ph2.jpg" id="img_2" style="position: absolute; top: 320px; left: 1300px; opacity: 0; filter: alpha(opacity=0);">
+			<img class = "sec-img" src = "./prod/ph3.jpg" id="img_3" style="position: absolute; top: 320px; left: 1300px; opacity: 0; filter: alpha(opacity=0);">
+			<img class = "sec-img" src = "./prod/ph4.jpg" id="img_4" style="position: absolute; top: 320px; left: 1300px; opacity: 0; filter: alpha(opacity=0);">
+			<img class = "sec-img" src = "./prod/ph5.jpg" id="img_5" style="position: absolute; top: 320px; left: 1300px; opacity: 0; filter: alpha(opacity=0);">
+		</div>
+		
+		<script type="text/javascript">
+			var image_count = 5;
+			var interval = 5000; //пауза 
+			var time_out = 15; //скорость смены картинки
+			var i = 5;
+			var timeout;
+			var opacity = 100;
+			function change_image() {
+			opacity--;
+			var j = i + 1;
+			var current_image = 'img_' + i;
+			if (i == image_count) j = 1;
+			var next_image = 'img_' + j;
+			document.getElementById(current_image).style.opacity=opacity/100;
+			document.getElementById(current_image).style.filter='alpha(opacity='+opacity+')';
+			document.getElementById(next_image).style.opacity= (100-opacity)/100;
+			document.getElementById(next_image).style.filter=' alpha(opacity='+(100-opacity)+')';
+			timeout = setTimeout("change_image()", time_out);
+				if (opacity==1) {
+					opacity = 100;
+					clearTimeout(timeout);
+					i++;
+				if (i>image_count) i=1;
+					timeout = setTimeout("change_image()", interval);
+						}
+				}
+			change_image()
+		</script>
+	</section>
+	
+	<footer>
+		<div class = "footer">
+			<a href = "./stub.html" class = "footer-txt nav-dec">Главная</a>
+			<a href = "./stub.html" class = "footer-txt nav-dec">Б/У под заказ</a>
+			<a href = "./stub.html" class = "footer-txt nav-dec">Авто под заказ</a>
+			<a href = "./stub.html" class = "footer-txt nav-dec">Авто в наличии</a>
+			<a href = "./stub.html" class = "footer-txt nav-dec">Коммерческий</a>
+		</div>
+	</footer>
+</body>

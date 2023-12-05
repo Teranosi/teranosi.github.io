@@ -1,0 +1,103 @@
+.nav {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-top: 20px;
+}
+.nav-ologo {
+	max-width: 85px;
+	max-height: 85px;
+	padding-right: 20px;
+	padding-left: 230px;
+}
+a {
+	text-decoration: none;
+}
+.nav-dec:hover {
+	color: white;
+}
+.nav-txt {
+	color: #626262;
+	font-size: 16px;
+	font-family: "Gill Sans", sans-serif;
+	padding: 10px;
+}
+.num {
+	color: white;
+}
+#numblock {
+	display: flex;
+	flex-direction: column;
+	padding-left: 140px;
+	line-height: 2px;
+	margin-right: -20px
+}
+.nav-slogo {
+	max-width: 30px;
+	max-height: 30px;
+	background-color: #1cb04d;
+	border: 10px solid #1cb04d;
+	border-radius: 15px;
+	margin-left: 20px;
+}
+#vib {
+	background-color: Violet;
+	border: 10px solid Violet;
+}
+#tel {
+	background-color: DodgerBlue;
+	border: 10px solid DodgerBlue;
+}
+.ls {
+	background-color: #1cb04d;
+	color: white;
+	font-size: 16px;
+	font-family: "Gill Sans", sans-serif;
+	border: solid 10px #1cb04d;
+	border-radius: 15px;
+	margin-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.sec-txt {
+	font-size: 20px;
+	color: #989b81d9;
+	font-family: "Gill Sans", sans-serif;
+	border: solid 4px #476da987;
+	border-radius: 20px;
+	background: white;
+	margin-right: 9in;
+	margin-left: 2.5in;
+}
+.prop-txt {
+	font-weight: 50%;
+	font-size: 25px;
+}
+.sec-img {
+	max-width: 480px;
+	max-height: 480px;
+}
+#img_5 {
+	width: 360px;
+}
+.footer {
+	justify-content: center;
+	display: flex;
+	background: black;
+	overflow: hidden;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	padding-top: 40px;
+    padding-bottom: 40px;
+	margin-left: -10px;
+}
+.footer-txt {
+	color: white;
+	padding-left: 20px;
+	font-family: "Gill Sans", sans-serif;
+}
+.footer-txt:hover {
+	color: #626262;
+}
